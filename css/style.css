@@ -1,5 +1,117 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: lightblue;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.4;
+    color: #454545;
+}
+
+p {
+    font-size: .95em;
+    margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+    color: #454545;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    line-height: 0;
+    position: relative;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.main-nav a {
+    font-size: .95em;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #f8b8b3;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+    text-align: center;
+}
+
+.banner {
+    color: #454545;
+    background: #aec5f1;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer {
+    background: #aaf3a2;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */   
+
+.logo {
+    width: 190px;
+}
+
+.headline {
+    margin-bottom: 0;
+}
+
+.discord {
+    width: 5%;
 }
 
 /* ================================================= 
