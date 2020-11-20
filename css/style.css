@@ -107,6 +107,14 @@ img {
     border-radius: 50%;
 }
 
+
+.rotate:hover{
+	-webkit-transform: rotateZ(-3600deg);
+	-ms-transform: rotateZ(-360deg);
+	transform: rotateZ(-360deg);
+	transition: 1000ms linear all;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
