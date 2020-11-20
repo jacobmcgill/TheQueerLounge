@@ -3,43 +3,38 @@
 ==================================== */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 body {
-    font-family: 'Varela Round', sans-serif;
-    line-height: 1.4;
-    color: #454545;
+    background-color: #92defc;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #454545;
+	margin: 0;
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 p {
-    font-size: .95em;
-    margin-bottom: 1.8em;
+	font-size: .95em;
+	margin: 0 0 1em 0;
 }
-
 h2,
 h3,
 a {
-    color: #454545;
+	color: #454545;
 }
-
 h2,
 h3 {
-    margin-top: 0;
+	margin: 0 0 .8em 0;
 }
-
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
-
 img {
-    max-width: 100%;
-}
-
-figure {
-    margin: 0;
-    line-height: 0;
-    position: relative;
+	max-width: 100%;
 }
 
 /* ================================= 
@@ -49,72 +44,109 @@ figure {
 /* ---- Navigation ---- */
 
 .name {
-    font-size: 1.5em;
-    margin: 0;
+	font-size: 1.35em;
+	margin: 0;
 }
-
+.main-nav {
+	margin-top: 5px;
+}
 .name a,
 .main-nav a {
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
 }
-
 .main-nav a {
-    font-size: .95em;
-    color: #454545;
-    text-transform: uppercase;
+	font-size: .95em;
+	color: #454545;
+	text-transform: uppercase;
 }
-
 .main-nav a:hover {
-    color: #f8b8b3;
+	color: #b1a7f0;
 }
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-    padding-top: .5em;
-    padding-bottom: .5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
-
 .banner,
 .main-footer {
-    text-align: center;
+	text-align: center;
 }
-
 .banner {
-    color: #454545;
-    background: #aec5f1;
-    padding: 3.2em 0;
-    margin-bottom: 60px;
+	color: #fff;
+	background: #b1a7f0;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
 }
-
 .col {
-    padding-right: 1em;
-    padding-left: 1em;
+	padding: 1em;
+	background: #f7fdaf;
+	border-radius: .35em;
+	margin: 0 .5em .8em;
 }
-
 .main-footer {
-    background: #aaf3a2;
-    padding: 2em 0;
-    margin-top: 30px;
+	background: #f8b8b3;
+	padding: 2em 0;
+	margin-top: 30px;
 }
 
-/* ---- Page Elements ---- */   
+/* ---- Page Elements ---- */
 
 .logo {
     width: 190px;
+    border-radius: 50%;
 }
-
 .headline {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
-
 .discord {
-    width: 5%;
+    width: 25%;
+    border-radius: 50%;
 }
 
-/* ================================================= 
-   Media Queries
-==================================================== */
+/* ================================= 
+  Media Queries
+==================================== */
 
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+    }
+    .main-header,
+	.main-nav,
+	.row,
+    .col {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+	flex: 1;
+    flex-direction: column;
+    align-self: flex-start;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+    }
+    .main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
